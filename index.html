@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Library Managemant App</h1>
+    </div>
+    <div class="addBookBtn">
+      <button
+        type="button"
+        onclick="showBookDetailFilling()"
+        class="btn btn-dark"
+      >
+        Add Book
+      </button>
+    </div>
+
+    <div class="bookData">
+      <form action="" id="form">
+        <label for="titleName">Title:</label><br />
+        <input
+          type="text"
+          name="titleName"
+          placeholder="Title"
+          value="Title"
+          id="title"
+        /><br />
+        <label for="author">Author:</label><br />
+        <input
+          type="text"
+          name="authorName"
+          placeholder="Author"
+          id="author"
+          value="Author"
+        /><br />
+        <label for="pages">Pages:</label><br />
+        <input
+          type="number"
+          name="pagesNumber"
+          placeholder="number of pages"
+          id="number"
+          value="0"
+        /><br />
+        <label for="read">Read:</label>
+        <input
+          type="checkbox"
+          name="read"
+          placeholder="Read or Not"
+          value="false"
+          id="read"
+        /><br />
+        <button
+          class="btn btn-primary"
+          type="submit"
+          onclick="addBookDetails()"
+        >
+          Add bookData
+        </button>
+        <button class="btn btn-danger" type="button" onclick="closePopUp()">
+          Close
+        </button>
+      </form>
+    </div>
+    <div id="Library-container"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

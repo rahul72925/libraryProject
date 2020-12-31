@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+.bookData {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  top: 25%;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: #e6e6e699;
+  /* Fallback color */
+}
+.bookData input {
+  outline: none;
+  border-radius: 4px;
+  border: none;
+}
+.bookData label {
+  color: black;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #968c83;
+  height: 80px;
+  font-family: "Comfortaa", cursive;
+}
+.header h1 {
+  margin: 4px 4px;
+}
+.addBookBtn {
+  display: flex;
+  justify-content: center;
+  margin: 4px 4px;
+}
+#Library-container {
+  display: flex;
+  background-color: #ffe6e6;
+  height: 80vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+.libBook {
+  /* border: 0.1px solid black; */
+  margin: 8px 8px;
+  padding: 4px 4px;
+  background-color: #fff5ea;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
+.bookTitle {
+  margin: 3px 3px;
+}
+.bookAuthor {
+  margin: 3px 3px;
+}
+.bookPages {
+  margin: 3px 3px;
+}
+.libBook button {
+  margin: 3px 3px;
+}
